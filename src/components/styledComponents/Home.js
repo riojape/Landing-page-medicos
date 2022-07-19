@@ -246,7 +246,7 @@ export const ContainerCovid = styled(Container)`
   }
 `;
 
-export const Footer = styled.footer`
+export const Foot = styled.footer`
   width: 90%;
   display: flex;
   flex-direction: column;
