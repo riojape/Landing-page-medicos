@@ -1,0 +1,22 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 40px auto;
+}
+.header-left{
+    display: flex;
+    align-items: center;
+}
+.menu-icon{
+    padding: 8px;
+    background-color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+@media (min-width: 768px) {
+    .menu-icon{
+        display: none;
+    }
+}

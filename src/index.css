@@ -1,0 +1,38 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+:root {
+  /* Titulos */
+  --h1: 6.4rem;
+  --h2: 4rem;
+  --h3: 2.8rem;
+  --h4: 1.8rem;
+
+  /* Parrafos */
+  --p1: 2rem;
+  --p2: 1.4rem;
+  --p3: 1.2rem;
+
+  /* Colores */
+  --white: #F0F4F7;
+  --grey: #445264;
+  --primary: #58C0A6;
+  --green-dark: #04503D;
+  --blue-dark: #222E55;
+  --greey-ligth: #E4E4E4;
+  --green-ligth: #E9F7FC;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  margin: 0;
+  background-color: var(--white);
+}
+
+
