@@ -31,9 +31,11 @@ import {
   ContainerCovid,
   Footer,
   FooterC1,
+  FooterC2,
   FooterC3,
   IconRedes,
   FooterT1,
+  ButtonStudy,
 } from "../styledComponents/Home";
 
 const CardSpecialists = () => {
@@ -68,7 +70,7 @@ const CardSpecialists = () => {
         </CardImage>
       </Card>
       <Card reverse>
-        <CardContent height="300px">
+        <CardContent height="300px" hDesktop="450px">
           <H2>Encuentra un centro de diagnóstico y agenda tu estudio </H2>
           <P2>
             Compara los precios del estudio en diferentes centros de diagnóstico
@@ -130,47 +132,47 @@ const CardSpecialists = () => {
               Recomendaciones sobre cómo prepararse para un estudio
             </P2>
           </Container>
-          <Button primary margin="20px 0">
+          <ButtonStudy primary margin="20px 0">
             Leer más sobre los estudios
-          </Button>
+          </ButtonStudy>
         </CardContent>
-        {/* <CardImage margin="100px 0 0 0">
+        <CardImage margin="100px 0 0 0">
           <Image
             src={medica}
             alt="foto de medico"
-            width="300px"
-            height="360px"
-            top="-80px"
-            left="50px"
-            wDesktop="550px"
-            hDesktop="650px"
-            topDesktop="-290px"
-            leftDesktop="-130px"
+            width="250px"
+            height="310px"
+            top="-60px"
+            left="20px"
+            wDesktop="500px"
+            hDesktop="600px"
+            topDesktop="-280px"
+            leftDesktop="-290px"
           />
           <Bg
-            width="239px"
-            height="254px"
-            left="-0px"
+            width="209px"
+            height="224px"
+            left="-20px"
             top="24px"
             borderRadius="150% 20px 20px 150%"
-            wDesktop="550px"
-            hDesktop="508px"
-            topDesktop="-150px"
-            leftDesktop="-450px"
+            wDesktop="500px"
+            hDesktop="450px"
+            topDesktop="-130px"
+            leftDesktop="-440px"
             inside
           ></Bg>
           <Bg
-            width="239px"
-            height="254px"
-            left="239px"
+            width="89px"
+            height="224px"
+            left="180px"
             top="24px"
-            wDesktop="478px"
-            hDesktop="508px"
-            topDesktop="-150px"
-            leftDesktop="100px"
+            wDesktop="208px"
+            hDesktop="450px"
+            topDesktop="-130px"
+            leftDesktop="00px"
             inside
           ></Bg>
-        </CardImage> */}
+        </CardImage>
       </Card>
       <OpinionContainer>
         <H2>Opiniones más recientes</H2>
@@ -195,7 +197,7 @@ const CardSpecialists = () => {
         <ButtonCovid>Agenda una TAC de tórax</ButtonCovid>
       </CovidCard>
       <Footer>
-        <FooterC1>
+        <FooterC1 h="100px">
           <H1>LOGO</H1>
           <FooterC3>
             <IconRedes url={facebook} size="20px" />
@@ -203,26 +205,26 @@ const CardSpecialists = () => {
             <IconRedes url={instagram} size="20px" />
           </FooterC3>
         </FooterC1>
-        <FooterC1>
+        <FooterC2 h="150px">
           <FooterT1>Menu</FooterT1>
-          <P2>Cita</P2>
-          <P2>Doctor</P2>
-          <P2>Covid-19</P2>
-          <P2>Consulta</P2>
-        </FooterC1>
-        <FooterC1>
+          <P2 margin="0">Cita</P2>
+          <P2 margin="0">Doctor</P2>
+          <P2 margin="0">Covid-19</P2>
+          <P2 margin="0">Consulta</P2>
+        </FooterC2>
+        <FooterC2 h="150px">
           <FooterT1>Legal</FooterT1>
-          <P2>Política de Privacidad</P2>
-          <P2>Términos de servicio</P2>
-          <P2>FAQ</P2>
-        </FooterC1>
-        <FooterC1>
+          <P2 margin="0">Política de Privacidad</P2>
+          <P2 margin="0">Términos de servicio</P2>
+          <P2 margin="0">FAQ</P2>
+        </FooterC2>
+        <FooterC2 h="150px">
           <FooterT1>Sobre nosotros</FooterT1>
-          <P2>Testimonios</P2>
-          <P2>Nuestra gestión</P2>
-          <P2>Nuestra historia</P2>
-          <P2>Carrera</P2>
-        </FooterC1>
+          <P2 margin="0">Testimonios</P2>
+          <P2 margin="0">Nuestra gestión</P2>
+          <P2 margin="0">Nuestra historia</P2>
+          <P2 margin="0">Carrera</P2>
+        </FooterC2>
       </Footer>
     </>
   );

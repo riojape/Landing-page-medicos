@@ -71,7 +71,7 @@ export const P1 = styled.p`
 export const P2 = styled.p`
   color: ${(props) => (props.opinion ? vars.color.blueDark : vars.color.grey)};
   font-size: ${vars.size.p2};
-  margin: 0 auto;
+  margin: ${(props) => (props.margin ? props.margin : "0 auto")};
   width: ${(props) => props.width};
   margin-left: ${(props) => props.ml};
   font-weight: ${(props) => (props.patient ? `700` : `400`)};
@@ -115,6 +115,9 @@ export const CardContent = styled.div`
   flex-direction: column;
   justify-content: space-between;
 
+  @media (min-width: 768px) {
+    height: ${(props) => props.hDesktop};
+  }
   @media (min-width: 1024px) {
     max-width: 600px;
   }
@@ -137,7 +140,7 @@ export const Image = styled.img`
   top: ${(props) => props.top};
   left: ${(props) => props.left};
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1424px) {
     width: ${(props) => props.wDesktop};
     height: ${(props) => props.hDesktop};
     top: ${(props) => props.topDesktop};
@@ -157,7 +160,7 @@ export const Bg = styled.div`
   border-radius: ${(props) => props.borderRadius};
   z-index: ${(props) => (props.inside ? `-1` : `-2`)};
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1424px) {
     width: ${(props) => props.wDesktop};
     height: ${(props) => props.hDesktop};
     top: ${(props) => props.topDesktop};
@@ -180,6 +183,11 @@ export const Icon = styled.i`
   background-repeat: no-repeat;
   background-position: center;
   background-size: ${(props) => props.size};
+`;
+export const ButtonStudy = styled(Button)`
+  @media (min-width: 768px) {
+    width: 400px;
+  }
 `;
 
 export const OpinionContainer = styled.div`
@@ -242,16 +250,32 @@ export const Footer = styled.footer`
   width: 90%;
   display: flex;
   flex-direction: column;
+  margin: 0 auto 100px auto;
+  height: 700px;
+  justify-content: space-between;
+
+  @media (min-width: 1024px) {
+    flex-direction: row;
+    height: 200px;
+  }
 `;
 export const FooterC1 = styled.div`
   width: 90%;
+  height: 100px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+
+  @media (min-width: 1024px) {
+    height: 150px;
+  }
 `;
 export const FooterC2 = styled.div`
   width: 90%;
+  height: 150px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 `;
 export const FooterC3 = styled.div`
   width: 90%;
@@ -262,10 +286,17 @@ export const IconRedes = styled(Icon)`
   width: 30px;
   height: 30px;
   background-color: transparent;
+  margin-right: 30px;
+  cursor: pointer;
 `;
-
 export const FooterT1 = styled.h4`
   font-size: ${vars.size.p1};
   font-weight: 700;
   color: ${vars.color.blueDark};
+`;
+export const FooterP1 = styled(P2)`
+  font-size: ${vars.size.p1};
+  font-weight: 700;
+  color: ${vars.color.blueDark};
+  margin: 0;
 `;
